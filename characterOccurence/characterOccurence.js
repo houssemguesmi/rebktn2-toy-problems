@@ -10,3 +10,26 @@
 
  // input   =  aaaaaaaaaaaa
  // result  =  123456789101112
+
+ function occurence(str) {
+    var array=str.split('')
+    var arr=[];
+    var caracters=[]
+    for(var i=0; i<array.length; i++){
+        if(!caracters.includes(array[i])){
+             var nb=1;
+            arr[i]=nb;
+            caracters.push(array[i])
+            for(var j=i+1; j<array.length; j++) {
+                if(array[i]===array[j]){
+                    nb++
+                    arr[j]=nb
+                }
+            }
+            if(nb === 1){
+                arr[i]=1;
+            }
+        }
+    }
+    return arr.join('')
+} 
