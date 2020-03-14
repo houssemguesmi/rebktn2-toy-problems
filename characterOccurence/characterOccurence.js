@@ -10,7 +10,6 @@
 
  // input   =  aaaaaaaaaaaa
  // result  =  123456789101112
-
  function occurence(str) {
     var array=str.split('')
     var arr=[];
