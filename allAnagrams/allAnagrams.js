@@ -35,4 +35,3 @@ let allAnagrams = function (string) {
   }
   return anagrams;
 };
-allAnagrams("abc");

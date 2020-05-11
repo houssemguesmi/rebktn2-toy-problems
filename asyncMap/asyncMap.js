@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* Implement the function asyncMap:
  *
@@ -37,6 +37,4 @@
  *
  */
 
-
-var asyncMap = function(tasks, callback) {
-};
+var asyncMap = function (tasks, callback) {};
